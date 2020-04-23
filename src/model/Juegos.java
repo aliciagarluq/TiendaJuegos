@@ -5,7 +5,7 @@ private String title;
 private int ram;
 private double price;
 private String platform;
-private String SO;
+
 /**
  * builder
  * @param title JUEGO
@@ -13,13 +13,13 @@ private String SO;
  * @param price ACCORDING TO PLATFORM
  * @param platform GAME
  */
-public Juegos(String title, int ram, double price, String platform,String SO) {
+public Juegos(String title, int ram, double price, String platform) {
 
 	this.title = title;
 	this.ram = ram;
 	this.price = price;
 	this.platform = platform;
-	this.SO=SO;
+
 }
 public Juegos() {
 
@@ -27,7 +27,7 @@ public Juegos() {
 	this.ram = 0;
 	this.price = 0.0;
 	this.platform = "";
-	this.SO="";
+
 	
 }
 public String getTitle() {
@@ -56,15 +56,10 @@ public void setPlatform(String platform) {
 }
 
 
-public String getSO() {
-	return SO;
-}
-public void setSO(String sO) {
-	SO = sO;
-}
+
 @Override
 public String toString() {
-	return "Juegos [title=" + title + ", ram=" + ram + ", price=" + price + ", platform=" + platform + ", SO=" + SO
+	return "Juegos [title=" + title + ", ram=" + ram + ", price=" + price + ", platform=" + platform
 			+ "]";
 }
 
