@@ -22,7 +22,7 @@ public class Main {
 		increase.increaseRam(juego1, 5);
 		increase.increaseRam(juego2, 8);
 		increase.increaseRam(juego3, 2);
-		increase.increaseIva(juego1,8);
+		increase.increaseIva(juego1,juego1.getPrice());
 		
 
 		array.add(juego1);

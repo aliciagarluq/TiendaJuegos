@@ -15,7 +15,7 @@ public class Helper {
 	public static double increaseIva(Juegos juego, double iva) {
 		/* base*porcentaje/100 */
 
-		iva = (juego.getPrice() * 0.21 / 100);
+		iva = (juego.getPrice() * 0.21);
 		
 		juego.setPrice(juego.getPrice()+iva);
 		return iva;

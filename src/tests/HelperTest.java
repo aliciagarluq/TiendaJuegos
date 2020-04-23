@@ -1,4 +1,4 @@
-package operations;
+package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 
 import model.Juegos;
+import operations.Helper;
 
 class HelperTest {
 
@@ -19,9 +20,12 @@ class HelperTest {
 		Helper.increaseRam(juego1, 5);
 		Helper.increaseRam(juego2, 6);
 		Helper.increaseRam(juego3, 4);
-		assertEquals(8, juego1.getRam());
+		assertEquals(Helper.increaseRam(juego1, 8),juego1.getRam());
+		assertEquals(Helper.increaseRam(juego2, 7),juego2.getRam());
+		assertEquals(Helper.increaseRam(juego3, 6),juego3.getRam());
+		/*assertEquals(8, juego1.getRam());
 		assertEquals(7, juego2.getRam());
-		assertEquals(5, juego3.getRam());
+		assertEquals(5, juego3.getRam());*/
 		}
 	
 
@@ -37,8 +41,9 @@ class HelperTest {
 		//juego1.setPrice(80);
 		juego3.setPrice(70.8);
 		//juego1.setPrice(80);
-		assertEquals(Helper.increaseIva(juego1, 5.8), juego1.getPrice());
-		
+		assertEquals(Helper.increaseIva(juego1,juego1.getPrice()), juego1.getPrice());
+		assertEquals(Helper.increaseIva(juego2,juego2.getPrice()), juego2.getPrice());
+		assertEquals(Helper.increaseIva(juego3,juego3.getPrice()), juego3.getPrice());	
 	}
 
 }
