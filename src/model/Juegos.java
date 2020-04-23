@@ -5,6 +5,7 @@ private String title;
 private int ram;
 private double price;
 private String platform;
+private String SO;
 /**
  * builder
  * @param title JUEGO
