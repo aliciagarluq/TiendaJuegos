@@ -59,7 +59,7 @@ public void setPlatform(String platform) {
 
 @Override
 public String toString() {
-	return "Juegos [title=" + title + ", ram=" + ram + ", price=" + price + ", platform=" + platform
+	return "[title=" + title + ", ram=" + ram + ", price=" + price + ", platform=" + platform
 			+ "]";
 }
 

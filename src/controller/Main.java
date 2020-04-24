@@ -31,7 +31,9 @@ public class Main {
 
 		for (Juegos juego : array) {
 			System.out.println(juego.toString());
+			
 		}
+		System.out.println("soy un cambio");
 
 	}
 
