@@ -22,8 +22,12 @@ public class Main {
 		increase.increaseRam(juego1, 5);
 		increase.increaseRam(juego2, 8);
 		increase.increaseRam(juego3, 2);
+		//a este le he añadido el iva
 		increase.increaseIva(juego1,juego1.getPrice());
-
+		// a este le he hecho un descuento
+		increase.descount(juego2,juego2.getPrice());
+		//a este le he añadido un incremento de precio
+		increase.increasePrice(juego3, juego3.getPrice());
 		
 
 		array.add(juego1);
